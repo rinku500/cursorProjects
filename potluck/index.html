@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gobble 'Til You Wobble! Thanksgiving Potluck Invitation</title>
+  <style>
+    body {
+      background: linear-gradient(120deg, #fffbe6 0%, #ffe5b4 100%);
+      font-family: 'Segoe UI', 'Arial', sans-serif;
+      color: #6b3e26;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #fff8ee;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(107, 62, 38, 0.12);
+      padding: 32px 28px 28px 28px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.2em;
+      color: #b85c1c;
+      letter-spacing: 1px;
+      text-shadow: 1px 2px 0 #fff3d1;
+    }
+    .subtitle {
+      font-size: 1em;
+      margin-bottom: 1.2em;
+      color: #a0522d;
+      font-weight: 500;
+    }
+    .info {
+      font-size: 1em;
+      margin: 1.5em 0;
+      line-height: 1.7;
+    }
+    .leaf {
+      font-size: 1em;
+      margin: 0 0.2em;
+      vertical-align: middle;
+    }
+    .footer {
+      margin-top: 2em;
+      font-size: 1em;
+      color: #b85c1c;
+      font-style: italic;
+    }
+    .turkey {
+      font-size: 1em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="turkey">🦃</div>
+    <h1>Gobble 'Til You Wobble!</h1>
+    <div class="subtitle">You're Invited to Our Thanksgiving Potluck Feast!</div>
+    <div class="instructions" style="margin-bottom:1.2em; font-size:1.05em; color:#7a4a1c;">
+      Please fill out the information below. Fields marked with a <span style='color:red; font-size:1em; vertical-align:super;'>*</span> are required.
+    </div>
+    <div class="info">
+      <span class="leaf">🍂</span> <b>Date:</b> Thursday, November 28th, 2025<br>
+      <span class="leaf">🍁</span> <b>Time:</b> 4:00 PM - 8:00 PM<br>
+      <span class="leaf">🏡</span> <b>Location:</b> 5829 White Pebble Path MD<br>
+      <span class="leaf">🥧</span> <b>Bring:</b> Your favorite dish to share (and your appetite!)<br>
+      <span class="leaf">👨‍👩‍👧‍👦</span> <b>Who:</b> Family & Friends (the more, the merrier!)
+    </div>
+    <form style="margin: 1.5em 0 0.5em 0;">
+      <label for="firstName" style="font-size:1.1em; color:#6b3e26;">
+        First Name <span style="color:red; font-size:1em; vertical-align:super;">*</span>
+      </label><br>
+      <input type="text" id="firstName" name="firstName" required style="margin-top:0.4em; padding:0.5em; width:60%; border-radius:6px; border:1px solid #b85c1c; font-size:1em;">
+      <br><br>
+      <label for="lastName" style="font-size:1.1em; color:#6b3e26;">
+        Last Name <span style="color:red; font-size:1em; vertical-align:super;">*</span>
+      </label><br>
+      <input type="text" id="lastName" name="lastName" required style="margin-top:0.4em; padding:0.5em; width:60%; border-radius:6px; border:1px solid #b85c1c; font-size:1em;">
+      <br><br>
+      <label for="email" style="font-size:1.1em; color:#6b3e26;">
+        Email <span style="color:red; font-size:1em; vertical-align:super;">*</span>
+      </label><br>
+      <input type="email" id="email" name="email" required style="margin-top:0.4em; padding:0.5em; width:60%; border-radius:6px; border:1px solid #b85c1c; font-size:1em;">
+      <br><br>
+      <label for="phone" style="font-size:1.1em; color:#6b3e26;">
+        Phone Number (optional)
+      </label><br>
+      <input type="tel" id="phone" name="phone" style="margin-top:0.4em; padding:0.5em; width:60%; border-radius:6px; border:1px solid #b85c1c; font-size:1em;">
+      <br><br>
+      <label for="foodType" style="font-size:1.1em; color:#6b3e26;">
+        What type of food are you bringing? <span style="color:red; font-size:1em; vertical-align:super;">*</span>
+      </label><br>
+      <select id="foodType" name="foodType" required style="margin-top:0.4em; padding:0.5em; width:62%; border-radius:6px; border:1px solid #b85c1c; font-size:1em;">
+        <option value="" disabled selected>Select an option</option>
+        <option value="meal">🍽️ Meal</option>
+        <option value="snack">🍿 Snack</option>
+        <option value="drink">🥤 Drink</option>
+      </select>
+      <br><br>
+      <label for="foodName" style="font-size:1.1em; color:#6b3e26;">
+        What exactly are you bringing? <span style="color:red; font-size:1em; vertical-align:super;">*</span>
+      </label><br>
+      <input type="text" id="foodName" name="foodName" required placeholder="e.g., Pumpkin Pie, Chips, Lemonade" style="margin-top:0.4em; padding:0.5em; width:60%; border-radius:6px; border:1px solid #b85c1c; font-size:1em;">
+      <br><br>
+      <button id="signupBtn" type="submit" style="width:65%; padding:0.7em; font-size:1.1em; border:none; border-radius:8px; background:#e6c8a1; color:#6b3e26; cursor:not-allowed; transition:background 0.2s;">Sign Up</button>
+    </form>
+    <div class="footer">
+      Let's celebrate gratitude, good food, and great company!<br>
+      RSVP by November 20th (just let us know in person or by text!)
+    </div>
+  </div>
+  <script>
+    const form = document.querySelector('form');
+    const signupBtn = document.getElementById('signupBtn');
+    const requiredFields = [
+      { id: 'firstName', label: 'First Name' },
+      { id: 'lastName', label: 'Last Name' },
+      { id: 'email', label: 'Email' },
+      { id: 'foodType', label: 'Type of Food' },
+      { id: 'foodName', label: 'Food Name' }
+    ];
+
+    function checkRequiredFields() {
+      let allFilled = true;
+      for (const field of requiredFields) {
+        const el = document.getElementById(field.id);
+        if (el) {
+          if (el.tagName === 'SELECT') {
+            if (!el.value) allFilled = false;
+          } else {
+            if (!el.value.trim()) allFilled = false;
+          }
+        }
+      }
+      return allFilled;
+    }
+
+    function getMissingFields() {
+      const missing = [];
+      for (const field of requiredFields) {
+        const el = document.getElementById(field.id);
+        if (el) {
+          if (el.tagName === 'SELECT') {
+            if (!el.value) missing.push(field.label);
+          } else {
+            if (!el.value.trim()) missing.push(field.label);
+          }
+        }
+      }
+      return missing;
+    }
+
+    function updateButtonState() {
+      if (checkRequiredFields()) {
+        signupBtn.style.background = '#b85c1c';
+        signupBtn.style.color = '#fff8ee';
+        signupBtn.style.cursor = 'pointer';
+        signupBtn.disabled = false;
+      } else {
+        signupBtn.style.background = '#e6c8a1';
+        signupBtn.style.color = '#6b3e26';
+        signupBtn.style.cursor = 'not-allowed';
+        signupBtn.disabled = false; // keep enabled for custom validation
+      }
+    }
+
+    form.addEventListener('input', updateButtonState);
+    form.addEventListener('change', updateButtonState);
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const missing = getMissingFields();
+      if (missing.length > 0) {
+        alert('Please fill out these fields:\n' + missing.join('\n'));
+        updateButtonState();
+        return;
+      }
+      // Save sign-up to localStorage
+      const signup = {
+        firstName: document.getElementById('firstName').value.trim(),
+        lastName: document.getElementById('lastName').value.trim(),
+        foodType: document.getElementById('foodType').options[document.getElementById('foodType').selectedIndex].text,
+        foodName: document.getElementById('foodName').value.trim()
+      };
+      let signups = [];
+      try {
+        signups = JSON.parse(localStorage.getItem('potluckSignups')) || [];
+      } catch (e) {
+        signups = [];
+      }
+      signups.push(signup);
+      localStorage.setItem('potluckSignups', JSON.stringify(signups));
+
+      // Build the signups table HTML
+      let tableRows = signups.map(s =>
+        `<tr><td>${s.firstName}</td><td>${s.lastName}</td><td>${s.foodType}</td><td style='padding-left:12px;'>${s.foodName}</td></tr>`
+      ).join('');
+      let tableHTML = `<h3 style='color:#b85c1c;margin-top:2em;'>Who's Signed Up?</h3><table style='margin:0 auto; border-collapse:collapse; font-size:1em;'><thead><tr><th style="padding:6px 12px; border-bottom:2px solid #b85c1c;">First Name</th><th style="padding:6px 12px; border-bottom:2px solid #b85c1c;">Last Name</th><th style="padding:6px 12px; border-bottom:2px solid #b85c1c;">Type</th><th style="padding:6px 12px; border-bottom:2px solid #b85c1c;">Food</th></tr></thead><tbody>` + tableRows + `</tbody></table>`;
+
+      // Show thank you message and signups table
+      document.body.innerHTML = `<div style='display:flex;justify-content:center;align-items:center;min-height:100vh;background:linear-gradient(120deg,#fffbe6 0%,#ffe5b4 100%);'><div style='background:#fff8ee;padding:40px 32px 32px 32px;border-radius:18px;box-shadow:0 4px 24px rgba(107,62,38,0.12);text-align:center;max-width:700px;width:100%;'><div style='font-size:2.5em;margin-bottom:0.3em;'>🦃</div><h2 style='color:#b85c1c;margin-bottom:0.5em;'>Thank You for Signing Up!</h2><div style='color:#6b3e26;font-size:1.15em;'>We can't wait to celebrate together and enjoy your delicious dish!<br><br>See you at the potluck!<br><br></div>` + tableHTML + `</div></div>`;
+    });
+
+    // Initial state
+    updateButtonState();
+  </script>
+</body>
+</html> 
