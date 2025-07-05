@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import emailjs from 'emailjs-com';
+import { useNavigate } from 'react-router-dom';
 
 const foodTypes = [
   "Appetizer",
@@ -11,7 +12,7 @@ const foodTypes = [
   "Other"
 ];
 
-export default function SignUp() {
+export default function SignUp({ hasSignedUp, setHasSignedUp }) {
   const [form, setForm] = useState({
     firstName: "",
     lastName: "",
@@ -23,6 +24,7 @@ export default function SignUp() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -67,6 +69,7 @@ export default function SignUp() {
       // --- End: EmailJS Integration ---
       
       setSubmitted(true);
+      setHasSignedUp(true);
 
     } catch (error) {
       console.error('Error signing up:', error);
@@ -76,12 +79,19 @@ export default function SignUp() {
     }
   };
 
-  if (submitted) {
+  if (hasSignedUp) {
     return (
       <div className="container">
         <div className="card">
           <h2>Thank you for signing up!</h2>
           <p>We look forward to seeing you at the potluck!</p>
+          <button
+            className="submit-btn"
+            style={{ marginTop: '2rem' }}
+            onClick={() => navigate('/users')}
+          >
+            See Who's Coming
+          </button>
         </div>
       </div>
     );

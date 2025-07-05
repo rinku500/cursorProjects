@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './Users.css';
+import { useNavigate } from 'react-router-dom';
 
-export default function Users() {
+export default function Users({ hasSignedUp }) {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -43,6 +45,15 @@ export default function Users() {
   return (
     <div className="container">
       <div className="card">
+        {hasSignedUp && (
+          <button
+            className="submit-btn"
+            style={{ marginBottom: '1.5rem' }}
+            onClick={() => navigate('/')}
+          >
+            Back to Thank You
+          </button>
+        )}
         <h2>🎉 Potluck Attendees 🎉</h2>
         <table>
           <thead>

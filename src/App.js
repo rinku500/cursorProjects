@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { HashRouter, Routes, Route, NavLink } from "react-router-dom";
 import SignUp from "./SignUp";
 import Users from "./Users";
@@ -14,6 +14,7 @@ const foodTypes = [
 ];
 
 export default function App() {
+  const [hasSignedUp, setHasSignedUp] = useState(false);
   return (
     <HashRouter>
       <div>
@@ -39,8 +40,8 @@ export default function App() {
         </nav>
 
         <Routes>
-          <Route path="/users" element={<Users />} />
-          <Route path="/" element={<SignUp />} />
+          <Route path="/users" element={<Users hasSignedUp={hasSignedUp} />} />
+          <Route path="/" element={<SignUp hasSignedUp={hasSignedUp} setHasSignedUp={setHasSignedUp} />} />
         </Routes>
       </div>
     </HashRouter>
