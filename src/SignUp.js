@@ -102,7 +102,7 @@ export default function SignUp({ hasSignedUp, setHasSignedUp }) {
       <form className="card" onSubmit={handleSubmit}>
         <div className="header">
           <span role="img" aria-label="turkey">🦃</span>
-          <h1>Gobble 'TestTil You Wobble!Ishani</h1>
+          <h1>Gobble 'Til You Wobble!</h1>
           <h2>You're Invited to Our Thanksgiving Potluck Feast!</h2>
           <p>
             Please fill out the information below. Fields marked with a <span className="required">*</span> are required.
